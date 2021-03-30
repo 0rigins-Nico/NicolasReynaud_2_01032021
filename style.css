@@ -3,11 +3,17 @@ a{
   color: inherit;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 
 /* survol des liens */
 
 .footer a:hover{
   text-decoration: underline;
+  margin-top: 0;
 }
 
 .nav a:hover{
@@ -78,18 +84,23 @@ input[type="submit"]{
   border: solid 1px #ccc; 
   padding:0.4em 0.7em; 
   color: #0065FC;
+  font-family: "Raleway", "Sans serif";
 }
 
 .filtre{
   margin-left: 10rem;
   grid-area: filtre;
   background-color: white;
+  font-weight: bold;
 }
 
 .filtretext{
+  display: inline;
   border: solid #F2F2F2;
-  padding:10px;
   border-radius: 45px;
+  text-align : center;
+  padding: 0.70em;
+  padding-left: 0;
 }
 
 .hebergement{
@@ -118,8 +129,9 @@ input[type="submit"]{
     text-decoration:none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .container{
+    text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.75fr 2fr 2fr 2fr 6fr 6fr 2fr;
     grid-template-areas: 
@@ -159,6 +171,14 @@ li {
   width  : 1em;
   height : 1em;
   border-radius: 100%;
+}
+
+.fas.fa-star.blue{
+  color: #0065FC;
+}
+
+.fas.fa-star.grey{
+  color: #ccc;
 }
 
 
