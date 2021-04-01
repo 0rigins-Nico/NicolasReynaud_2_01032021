@@ -108,6 +108,21 @@ input[type="submit"]{
     grid-area: hebergement;
     background-color: #F2F2F2;
     border-radius: 10px;
+    padding: 2rem;
+}
+
+.hebergementimg{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.hebergementcadre{
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .populaire{
@@ -115,12 +130,41 @@ input[type="submit"]{
     grid-area: populaire;
     background-color: #F2F2F2;
     border-radius: 10px;
+    padding: 2rem;
+}
+
+.populaireimg{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.populairecadre{
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .activite{
     margin-left: 10rem;
+    margin-right: 10rem;
     grid-area: activite;
     background-color: white;
+}
+
+.activiteimg{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.activitecadre{
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .footer{
@@ -129,7 +173,7 @@ input[type="submit"]{
     text-decoration:none;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .container{
     text-align: center;
     grid-template-columns: 1fr;
@@ -143,6 +187,12 @@ input[type="submit"]{
     "hebergement hebergement"
     "activite activite"
     "footer footer";
+    }
+    .hebergementimg,
+    .populaireimg,
+    .activiteimg{
+      text-align: center;
+      grid-template-columns: 1fr;
     }
 }
 
