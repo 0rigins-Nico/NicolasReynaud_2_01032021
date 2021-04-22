@@ -4,14 +4,16 @@
    <head>
 		<meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="Raleway-font\raleway.css" />
+        <link rel="stylesheet" href="Raleway-font/raleway.css" />
         <script src="https://kit.fontawesome.com/ec601431d5.js" crossorigin="anonymous"></script>
         <title> Reservia </title>
    </head>
 
 <body>
-    <div class="container">
-        <div class="logo"><img src="images/logo/Reservia.svg" alt="Reservia"></div>
+
+<header>
+    <div class="logo"><img src="images/logo/Reservia.svg" alt="Reservia"></div>
+    <div class='menu'>
         <div class="nav">
             <ul>
                 <li><a href="#hebergement">Hébergements</a></li>
@@ -19,8 +21,11 @@
             </ul>
         </div>
         <div class="login">
-            <a href="#">S'inscrire</a>
+            <span><a href="#">S'inscrire</a></span>
         </div>
+    </div>
+</header>   
+    <div class="container">
         <div class="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             En plein centre-ville ou en pleine nature<br><br>
@@ -34,11 +39,10 @@
         <p class="filtretext"><i class="fas fa-child"></i>Familial</p>
         <p class="filtretext"><i class="fas fa-heart"></i>Romantique</p>
         <p class="filtretext"><i class="fas fa-dog"></i>Animaux autorisés</p><br><br>
+        </div>
+        <div class="resultat">
         <i class="fas fa-info"></i> <p style="font-weight: normal;"> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-
-
-
 
         <div class="hebergement">
             <h1>Hébergements à Marseille</h1>
@@ -134,7 +138,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="#">Afficher plus</a> 
+                <a href="#"><b>Afficher plus</b></a> 
             </article>
         </div>
         <div class="populaire">
@@ -197,15 +201,15 @@
             <h1>Activités à Marseille</h1>
             <section>
                 <article class="activiteimg">
-                    <div class="activitecadre">
+                    <div class="activitecadre01">
                         <a href="#">
-                            <img class="photoactivite" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                            <img class="photoactivite01" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                             <div class="nomactivite">
                                 <h3>Vieux port</h3>
                             </div>
                         </a>
                     </div>
-                        <div class="activitecadre">
+                        <div class="activitecadre02">
                             <a href="#">
                                 <img class="photoactivite" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort Pomegues">
                                 <div>
@@ -213,23 +217,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="activitecadre">
-                            <a href="#">
-                                <img class="photoactivite" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="ile frioul">
-                                <div>
-                                    <h3>Îles du Frioul</h3>
-                                </div>
-                            </a>
-                        </div>
-                    <div class="activitecadre">
-                        <a href="#">
-                            <img class="photoactivite" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Calanques">
-                            <div>
-                                <h3>Parc National des Calanques</h3>
-                            </div>
-                        </a>
-                    </div>
-                        <div class="activitecadre">
+                        <div class="activitecadre03">
                             <a href="#">
                                 <img class="photoactivite" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
                                 <div>
@@ -237,7 +225,23 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="activitecadre">
+                    <div class="activitecadre04">
+                        <a href="#">
+                            <img class="photoactivite04" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Calanques">
+                            <div>
+                                <h3>Parc National des Calanques</h3>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="activitecadre05">
+                            <a href="#">
+                                <img class="photoactivite" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="ile frioul">
+                                <div>
+                                    <h3>Îles du Frioul</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="activitecadre06">
                             <a href="#">
                                 <img class="photoactivite" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                                 <div>
@@ -249,7 +253,7 @@
             </section>
         </div>
 
-    <div class="footer">
+    <div class="footer">   
         <div class="wrapper">
             <div class="gauche">
                 <h3 class="gauche">A propos</h3>
@@ -266,10 +270,10 @@
                 <h3 class="droite">Assistance</h3>
                     <a href="#" class="droite">Centre d'aide</a><br>
                     <a href="#" class="droite">Nous contacter</a><br>
-                </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
