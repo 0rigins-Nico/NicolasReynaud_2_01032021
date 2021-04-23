@@ -75,7 +75,7 @@ header{
     padding-right: 50px;
     padding-top: 30px;
     display: grid;
-    column-gap: 20px;
+    column-gap: 40px;
     row-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -167,7 +167,7 @@ input[type="search"]{
     grid-area: hebergement;
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .hebergementimg{
@@ -197,7 +197,7 @@ input[type="search"]{
     grid-area: populaire;
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .populairestyle{
@@ -220,8 +220,8 @@ input[type="search"]{
 }
 
 .photopopulaire {
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   float: left;
