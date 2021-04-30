@@ -413,6 +413,7 @@ li {
     }
   }
 
+
   @media all and (min-width: 813px) and (max-width: 1024px){
     .container{
     text-align: center;
@@ -428,10 +429,48 @@ li {
     "activite activite"
     "footer footer";
     }
+
     .hebergementimg,
-    .populaireimg,
-    .activiteimg{
+    .populaireimg {
       text-align: center;
       grid-template-columns: 1fr;
     }
+
+    .activiteimg{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      grid-template-columns: 1fr;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      text-align: left;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    .hebergementcadre,
+    .populairecadre {
+      text-align: justify;
+    }
+
+    h1 {
+      text-align: justify;
+    }
+
+    .photoactivite,
+    .photoactivite01,
+    .photoactivite04 {
+      width: 100%;
+      height: 200px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      text-align: initial;
+    }
+    
 }
