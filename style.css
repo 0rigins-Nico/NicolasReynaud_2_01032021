@@ -395,7 +395,7 @@ li {
 
   /* Responsive */
   
-  @media all and (max-width: 812px) {
+  @media all and (min-width: 768px) {
     .milieu {
       width: 100%;
       order: 0;
@@ -409,21 +409,19 @@ li {
     .gauche,
     .milieu,
     .droite {
-      flex: none;
+      flex-direction: column;
     }
   }
 
 
-  @media all and (min-width: 813px) and (max-width: 1024px){
+  @media all and (min-width: 813px) and (max-width: 1023px){
     .container{
-    text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.75fr 2fr 2fr 2fr 6fr 6fr 2fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "logo login"
-    "nav nav"
-    "filtre filtre"
     "recherche recherche"
+    "filtre filtre"
+    "resultat resultat"
     "populaire populaire"
     "hebergement hebergement"
     "activite activite"
@@ -445,7 +443,6 @@ li {
 
     .wrapper {
       display: flex;
-      flex-flow: column;
       text-align: left;
       margin-top: 30px;
       margin-left: 30px;
