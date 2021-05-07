@@ -106,9 +106,9 @@ header{
 }
 
 .login{
-  display: flex;
+  display: block;
   flex-direction: row-reverse;
-  margin-top: 1em;
+  margin-top: 2em;
   align-items: center;
   color: #0065FC;
   font-weight: bold;
@@ -397,6 +397,11 @@ li {
   
 
   @media (max-device-width: 480px){
+
+    header{
+      display: flex;
+    }
+
   .wrapper {
     display: flex;
     text-align: left;
@@ -406,7 +411,7 @@ li {
   }
 
   input[type="submit"]::before{
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     content: "\f002";
     border: solid 1px #ccc;
     padding: 0.4em 0.7em;
