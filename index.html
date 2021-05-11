@@ -13,28 +13,30 @@
 
 <header>
     <div class="logo"><img src="images/logo/Reservia.svg" alt="Reservia"></div>
-    <div class='menu'>
-        <div class="nav">
-            <ul>
-                <li><a href="#hebergement">Hébergements</a></li>
-                <li><a href="#activite">Activités</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <span><a href="#">S'inscrire</a></span>
-        </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#hebergement">Hébergements</a></li>
+            <li><a href="#activite">Activités</a></li>
+        </ul>
     </div>
-</header>   
+    <div class="login">
+        <span><a href="#">S'inscrire</a></span>
+    </div>
+</header>
+
     <div class="container">
         <div class="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             En plein centre-ville ou en pleine nature<br><br>
             <form method="post">
-            <i class="fas fa-map-marker-alt"></i><input type="search" value="Marseille, France"/><input type="submit" value="Rechercher" /><br>
+            <i class="fas fa-map-marker-alt"></i><input type="search" value="Marseille, France"/><button type="button" id="button">
+                <span class="secret"><i class="fas fa-search" id="search"></i></span>
+                <span id="text_rechercher">Rechercher</span>
+            </button><br>
         </form>
         </div>
         <div class="filtre">
-        <h3>Filtres</h3>
+        <h4>Filtres</h4>
         <p class="filtretext"><i class="fas fa-money-bill-wave"></i>Économique</p>
         <p class="filtretext"><i class="fas fa-child"></i>Familial</p>
         <p class="filtretext"><i class="fas fa-heart"></i>Romantique</p>
