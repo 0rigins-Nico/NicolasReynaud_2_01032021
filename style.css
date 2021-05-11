@@ -50,6 +50,10 @@ li {
   display: inline;
 }
 
+#search{
+  display: none;
+}
+
 
 /* survol des liens */
 
@@ -421,6 +425,27 @@ input[type="search"]{
     margin-left: 30px;
     flex-direction: column;
   }
+
+  #text_rechercher{
+    display: none;
+  }
+
+  #search{
+    display: initial;
+  }
+
+  button {
+    border: solid 1px #ccc;
+    height: 3.5em;
+    width: 4em;
+    color: white;
+    background-color: #0065FC;
+    font-family: "Raleway", "Sans serif";
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
 }
 
   @media all and (min-width: 813px) and (max-width: 1023px){
