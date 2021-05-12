@@ -416,6 +416,47 @@ input[type="search"]{
 
   header{
     display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  } 
+
+  .login {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -2em;
+    align-items: center;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+  .nav {
+    display: flex;
+    padding-right: 0;
+    word-spacing: 350px;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    order: 3;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .nav a:hover{
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 16px;
+    border-top: none;
+    color: #0065FC;
+  }
+
+  .filtre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
   }
 
   .wrapper {
