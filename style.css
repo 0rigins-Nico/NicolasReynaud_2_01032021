@@ -419,9 +419,25 @@ input[type="search"]{
     flex-direction: column;
   }
 
+  li {
+    display: inline;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 186px;
+  }
+
+  li:hover{
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 16px;
+    border-top: none;
+    color: #0065FC;
+  }
+
   ul {
     padding-inline-start: 0px;
-  } 
+    display: table;
+  }
+
 
   .login {
     display: flex;
@@ -435,21 +451,23 @@ input[type="search"]{
   .nav {
     display: flex;
     padding-right: 0;
-    word-spacing: 350px;
     margin-top: 2em;
     align-items: center;
-    justify-content: space-around;
     font-weight: 500;
     order: 3;
     border-bottom: 3px solid #ccc;
   }
 
   .nav a:hover{
+  border-top: none;
+  }
+
+  /*.nav a:hover{
     border-bottom: 3px solid #0065FC;
     padding-bottom: 16px;
     border-top: none;
     color: #0065FC;
-  }
+  } */
 
   .filtre{
     display: flex;
