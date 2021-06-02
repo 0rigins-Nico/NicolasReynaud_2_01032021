@@ -313,7 +313,6 @@ input[type="search"]{
 }
 
 .activitecadre01{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
@@ -322,21 +321,18 @@ input[type="search"]{
 }
 
 .activitecadre02{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
 }
 
 .activitecadre03{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
 }
 
 .activitecadre04{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
@@ -345,14 +341,12 @@ input[type="search"]{
 }
 
 .activitecadre05{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
 }
 
 .activitecadre06{
-  background-color: #F2F2F2;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #ccc;
   cursor: pointer;
@@ -392,6 +386,7 @@ input[type="search"]{
   grid-area: footer;
   background-color: #F2F2F2;
   text-decoration:none;
+  padding-bottom: 20px;
 }
 
 .wrapper{
@@ -444,7 +439,6 @@ input[type="search"]{
     display: table;
   }
 
-
   .login {
     display: flex;
     flex-direction: row-reverse;
@@ -462,25 +456,17 @@ input[type="search"]{
     font-weight: 500;
     order: 3;
     border-bottom: 3px solid #ccc;
+    justify-content: space-around;
   }
 
   .nav a:hover{
   border-top: none;
   }
 
-  /*.nav a:hover{
-    border-bottom: 3px solid #0065FC;
-    padding-bottom: 16px;
-    border-top: none;
-    color: #0065FC;
-  } */
-
   .filtre{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-content: flex-start;
-    align-items: flex-start;
   }
 
   .wrapper {
@@ -528,8 +514,14 @@ input[type="search"]{
     }
 
     .photopopulaire {
-      width: 475px;
-    }
+      width: 250px;
+      height: 250px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      float: left;
+      margin-right: 30px;
+      object-fit: cover;
+  }
 
     .hebergementimg,
     .populaireimg {
@@ -557,7 +549,7 @@ input[type="search"]{
     }
 
     h1 {
-      text-align: justify;
+      text-align: left;
     }
 
     .photoactivite,
