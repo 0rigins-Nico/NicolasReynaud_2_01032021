@@ -416,6 +416,23 @@ input[type="search"]{
 
   @media (max-device-width: 480px){
 
+  body {
+    font-family: Raleway, "Sans serif";
+    margin: 0;
+    font-size: 330%;
+    display: block;
+    width: fit-content;
+  }
+
+  .filtretext {
+    display: inline;
+    border: solid #F2F2F2;
+    border-radius: 65px;
+    text-align: center;
+    padding-right: 22px;
+    margin: 15px;
+}
+
   header{
     display: flex;
     flex-direction: column;
@@ -463,17 +480,103 @@ input[type="search"]{
   border-top: none;
   }
 
-  .filtre{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  .recherche {
+    grid-area: recherche;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input[type="search"] {
+  padding: 1em;
+  width: 17em;
+  height: 2.5em;
+  border: 2px solid #F2F2F2;
+  font-weight: bold;
+  font-size: larger;
+}
+
+form[method="post"] {
+  display: inline-flex;
+}
+
+.fas.fa-map-marker-alt {
+  text-align: center;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #F2F2F2;
+}
+
+button {
+  border: solid 1px #ccc;
+  height: 12.5em;
+  width: 13em;
+  color: white;
+  background-color: #0065FC;
+  font-family: "Raleway", "Sans serif";
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.resultat {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+  .container {
+    height: 100vh;
+    padding-top: 30px;
+    padding: initial;
+    display: grid;
+    column-gap: 40px;
+    row-gap: 30px;
   }
+
+  #hebergement {
+    background-color: white;
+}
+
+  .photohebergement {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+#activite {
+  grid-area: activite;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.photopopulaire{
+  height: 400px;
+  width: 500px;
+}
+
+.etoilespop {
+  padding-top: 120px;
+}
 
   .wrapper {
     display: flex;
     text-align: left;
     margin-top: 30px;
     margin-left: 30px;
+    row-gap: 50px;
     flex-direction: column;
   }
 
@@ -483,19 +586,8 @@ input[type="search"]{
 
   #search{
     display: initial;
+        font-size: 300%;
   }
-
-  button {
-    border: solid 1px #ccc;
-    height: 3.5em;
-    width: 4em;
-    color: white;
-    background-color: #0065FC;
-    font-family: "Raleway", "Sans serif";
-    font-weight: bold;
-    border-radius: 10px;
-}
-
 
 }
 
@@ -514,8 +606,6 @@ input[type="search"]{
     }
 
     .photopopulaire {
-      width: 250px;
-      height: 250px;
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
       float: left;
